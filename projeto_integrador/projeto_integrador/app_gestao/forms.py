@@ -8,4 +8,5 @@ class UsuariosForm(forms.ModelForm):
         widgets = {
             'Emissao': forms.DateInput(attrs={'type': 'date'}),
             'Data_Nascimento': forms.DateInput(attrs={'type': 'date'}),
+            'documento': forms.ClearableFileInput(),  # Widget para upload de arquivos
         }
